@@ -1,0 +1,11 @@
+language: python
+
+env:
+  - PYTHON=2.7 DEPS=latest BACKEND=agg DOCTESTS=true
+  - PYTHON=3.6 DEPS=latest BACKEND=agg DOCTESTS=true
+
+install:
+  - pip install tox-travis
+  
+script:
+  - tox
